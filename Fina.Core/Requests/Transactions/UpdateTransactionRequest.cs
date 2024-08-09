@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Fina.Core.Requests.Transactions
 {
-    public class UpdateTransactionRequest
+    public class UpdateTransactionRequest : Request
     {
         public long Id { get; set; }
 
@@ -22,6 +22,10 @@ namespace Fina.Core.Requests.Transactions
         public decimal Amount { get; set; }
 
         [Required(ErrorMessage = "Categoria inválida")]
+        public long categoryId { get; set; }
+
+        [Required(ErrorMessage = "Data inválida")]
+
         public DateTime? PaidOrReceiveAt { get; set; }
     }
 }

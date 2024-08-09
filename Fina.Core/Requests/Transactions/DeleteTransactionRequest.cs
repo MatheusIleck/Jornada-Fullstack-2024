@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Fina.Core.Requests.Transactions
 {
-    internal class DeleteTransactionRequest : Request
+    public class DeleteTransactionRequest : Request
     {
         public long Id { get; set; }
     }

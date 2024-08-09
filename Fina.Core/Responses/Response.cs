@@ -26,6 +26,6 @@ namespace Fina.Core.Responses
 
 
         [JsonIgnore]
-        public bool IsSucess => _code is >= 200 and <= 299;
+        public bool IsSuccess => _code is >= 200 and <= 299;
     }
 }
